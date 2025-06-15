@@ -15,11 +15,11 @@ class ProductSeeder extends Seeder
     {
         Product::insert([
             ['title' => 'Skerdiena', 'price' => 5.5, 'image' => 'images/broileris.jpg'],
-            ['title' => 'Sparneliai', 'price' => 3.5, 'image' => 'images/sparneliai.jpg'],
-            ['title' => 'Krūtinėlė', 'price' => 7, 'image' => 'images/krutinele.jpg'],
-            ['title' => 'Ketvirčiai', 'price' => 4.5, 'image' => 'images/Ketvirtis.jpg'],
+            ['title' => 'Sparneliai', 'price' => 3.90, 'image' => 'images/sparneliai.jpg'],
+            ['title' => 'Krūtinėlė', 'price' => 7.5, 'image' => 'images/krutinele.jpg'],
+            ['title' => 'Ketvirčiai', 'price' => 4.90, 'image' => 'images/Ketvirtis.jpg'],
             ['title' => 'Sriubos Rinkinys', 'price' => 2.5, 'image' => 'images/sriubos_rinkinys.jpg'],
-            ['title' => 'Subproduktai', 'price' => 2.5, 'image' => 'images/subproduktai.jpg']
+            ['title' => 'Subproduktai', 'price' => 3, 'image' => 'images/subproduktai.jpg']
 
         ]);
     }

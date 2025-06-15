@@ -1,7 +1,6 @@
 <?php
 
 
-
 use App\Http\Controllers\ProductController;
 use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
@@ -18,13 +17,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
 Route::get('/', function () {
     $data = Product::all();
-
     return view('welcome', compact('data'));
 });
-Route::redirect('/home','/products');
-Route::redirect('/register','/');
 
-Route::resource('products', ProductController::class)->except(['edit','show','update'])->middleware('auth');
+// Route::redirect('/home','/products');
+Route::redirect('/register', 'login');
+Route::resource('products', ProductController::class)->except(['edit', 'show', 'update'])->middleware('auth');
+Route::get('portfolio', function () {
+    return view('layouts.portfolio.index');
+});
